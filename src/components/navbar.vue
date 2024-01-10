@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
  <div class="container-fluid">
    <router-link to="/">
        <img class="img-fluid" src="https://i.postimg.cc/xCy7kKmr/s.png" width="50px" height="100px" alt="logo">
@@ -44,3 +44,10 @@
  </div>
 </nav>
 </template>
+<style>
+#nav{
+  margin-top: 10em;
+  position: sticky;
+  top:0px
+}
+</style>

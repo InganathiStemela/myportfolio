@@ -11,6 +11,7 @@
 </template>
 
 <script>
+
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
 import HomeView from './views/HomeView.vue';
@@ -23,5 +24,7 @@ export default{
   }
 }
 </script>
+
 <style src="@/assets/CSS/style.css">
+
 </style>

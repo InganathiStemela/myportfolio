@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import axios from 'axios'
 
 export default createStore({
   state: {
@@ -18,7 +19,7 @@ export default createStore({
   },
   actions: {
     fetchData({ commit }) {
-      axios.get('')
+      axios.get('https://inganathistemela.github.io/resume/')
       .then(response => {
         commit('setHome',response.data);
       })
