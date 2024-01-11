@@ -3,25 +3,31 @@ import axios from 'axios'
 
 export default createStore({
   state: {
-    Home: [],
-    About: [],
     Resume: [],
     Projects: [],
-    Testimonials: [],
-    Contact: []
+    testimonials: [],
   },
   getters: {
   },
   mutations: {
-    setHome(state, data) {
-      state.Home = data ;
+    Testimonialsdata(state, data) {
+      state.testimonials = data ;
     }
   },
   actions: {
-    fetchData({ commit }) {
-      axios.get('https://inganathistemela.github.io/resume/')
+    fetchTestData({ commit }) {
+      axios.get('http://localhost:3000/testimonials')
       .then(response => {
-        commit('setHome',response.data);
+        commit('Testimonialsdata',response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:',error);
+      });
+    },
+    fetchData({ commit }) {
+      axios.get('')
+      .then(response => {
+        commit('Resumedata',response.data);
       })
       .catch(error => {
         console.error('Error fetching data:',error);
@@ -30,4 +36,4 @@ export default createStore({
   },
   modules: {
   }
-})
+});
