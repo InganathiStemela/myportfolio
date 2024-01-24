@@ -1,50 +1,74 @@
 <template>
-  <div class="testimonial">
-    <!-- <h1>This is the testimonial page</h1> -->
-    <div class="card-container">
-      <div
-        class="card"
-        v-for="testimonials in $store.state.testimonials"
-        :key="testimonials.name"
-        style="width: 14rem;"
-      >
-        <div class="card-body">
-          <h5 class="card-title">{{ testimonials.name }}</h5>
-          <p class="card-text"></p>
-          <p><img class="image" :src="testimonials.image"  alt=""/></p>
-          <p>{{ testimonials.description }}</p>
+  
+  <div class="container " style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="row">
+      <div class="card p-2" v-for="Testimonial in Testimonials" :key="Testimonial.id"  style="width: 20rem;">
+          <img :src="Testimonial.image" class="card-img-top" >
+          <div class="card-body">
+            <h5 class="card-title">{{ Testimonial.name }}</h5>
+            <p class="card-text">{{ Testimonial.description }}</p>
+          </div>
         </div>
       </div>
-    </div>
   </div>
+
+  
 </template>
 
 <script>
-export default {
-  computed: {
-    fetchTestData() {
-      this.$store.dispatch('fetchTestData'); 
-    }
-  },
-  mounted() {
-    this.fetchTestData;
-  }
-};
+    export default {
+        computed: {
+          Testimonials() {
+            return this.$store.state.Testimonials;
+          },
+        },
+        mounted() {
+          this.$store.dispatch("fetchTestimonials");
+        },
+      };
 </script>
 
-<style>
-.card-container {
-  display: flex;
-  /* flex-wrap: wrap;  */
+<style  scoped>
+.row{
+  margin-left: 70px;
 }
-
 .card {
-  margin-right: 16px;
-  margin-bottom: 16px;
+  display: grid !important;
+  grid-template-columns: repeat (3, 1fr );
+  justify-content: center;
+  margin:20px 30px;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.image {
-  width: 200px;
-  height: 180px;
+
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (width < 500px){
+  .row{
+    margin-left: 0;
+    padding: 0;
+  }
+  .card{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    padding: 0;
+  }
 }
 </style>
+
+
+
+
+

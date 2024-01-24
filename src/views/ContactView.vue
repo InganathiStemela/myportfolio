@@ -17,3 +17,6 @@
         </form>
       </div>
   </template>
+  <style  src="@/assets/CSS/style.css">
+
+</style>

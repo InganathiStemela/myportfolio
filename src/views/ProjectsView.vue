@@ -1,50 +1,71 @@
 <template>
-    <div class="projects">
-      <h1>This is the projects page</h1>
-    </div>
-    <div class="container" id="Projects">
-    <h1 class="el el-align-center"><u>Projects</u></h1>
-    <div class="row">
-        <!-- first one -->
-        <div class="card col-5" >
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Keyboard</h5>
-            <a href="https://github.com/InganathiStemela/keyboard.git" class="btn btn-primary">GitHub</a>
-            <a href="https://vercel.com/ " class="btn btn-primary">Vercel</a>
+
+    <h1>My Projects</h1>
+      <div class="projects">
+          <div v-for="Project in Projects" :key="Project.id" class="card" style="width: 27rem;">
+              <img :src=" Project.imgUrl" class="card-img-top" :alt="Project.name">
+              <div class="card-body">
+                <h5 class="card-title">{{Project.name}}</h5>
+                <a :href="Project.github" target="_blank"  class="btn btn-primary">github</a>
+                <a :href="Project.vercel" target="_blank" class="btn btn-primary">vercel</a>
+              </div>
             </div>
-        </div>
-        <!-- second one -->
-        <div class="col-2"></div>
-        <!-- third one -->
-        <div class="card col-5">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Calculator</h5>
-            <a href="https://github.com/InganathiStemela/keyboard.git" class="btn btn-primary">GitHub</a>
-            <a href="https://vercel.com/ " class="btn btn-primary">Vercel</a>
-            </div>
-        </div>
-    </div>
-   <div class="row">
-    <div class="card col-5">
-    <img src="" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Ecommerce</h5>
-        <a href="https://github.com/InganathiStemela/Thumie-s-Tupperware-Shop.git" class="btn btn-primary">GitHub</a>
-        <a href="https://vercel.com/ " class="btn btn-primary">Vercel</a>
-    </div>
-    </div>
-    </div>
-    <div class="row">
-    <div class="card col-5">
-    <img src="" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Temperature Convertor</h5>
-        <a href="https://github.com/InganathiStemela/temperature.git" class="btn btn-primary">GitHub</a>
-        <a href="https://vercel.com/ " class="btn btn-primary">Vercel</a>
-    </div>
-    </div>
-</div>
-</div>
+      </div>
+  
   </template>
+  
+  <script>
+       export default {
+    computed: {
+      Projects() {
+        return this.$store.state.Projects
+      },
+    },
+    mounted() {
+      this.$store.dispatch('fetchProjects');
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 16rem;
+    height: 16rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .card-img-top {
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 7px;
+    border-radius: 0.25rem;
+  }
+  </style>
+  

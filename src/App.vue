@@ -2,9 +2,10 @@
 
   <main class="container-fluid">
 
-    <navbar></navbar>
+    <Navbar/>
     <router-view/>
     <Footer/>
+    <Spinner/>
 
   </main>
   
@@ -15,12 +16,14 @@
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
 import HomeView from './views/HomeView.vue';
+import Spinner from './components/Spinner.vue'
 
 export default{
   components:{
     Navbar,
     Footer,
-    HomeView
+    HomeView,
+    Spinner
   }
 }
 </script>
