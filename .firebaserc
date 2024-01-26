@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "vue-portfolio-c7b9c"
-  }
+    "default": "myportfolio-a2203",
+    "vueport": "myportfolio-a2203"
+  },
+  "targets": {},
+  "etags": {}
 }
