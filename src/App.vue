@@ -30,4 +30,5 @@ export default{
 
 <style src="@/assets/CSS/style.css">
 
+
 </style>

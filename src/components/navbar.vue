@@ -1,7 +1,7 @@
 <template>
   <div class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color:fuchsia;">
       <router-link to="/">
         <img class="img-fluid" src="https://i.postimg.cc/xCy7kKmr/s.png" width="50px" height="50px" alt="logo">
       </router-link>
@@ -12,32 +12,32 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <router-link to="/" class="nav-link" exact>
-              Home
+              |Home|
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/about" class="nav-link">
-              About
+              |About|
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/resume" class="nav-link">
-              Resume
+              |Resume|
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/projects" class="nav-link">
-              Projects
+              |Projects|
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/testimonials" class="nav-link">
-              Testimonials
+              |Testimonials|
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/contact" class="nav-link">
-              Contact
+              |Contact|
             </router-link>
           </li>
         </ul>
@@ -52,5 +52,9 @@
    }
 </script>
 <style  scoped>
+@media only screen and (max-width: 600px) {
+}
+
+
 </style>
 

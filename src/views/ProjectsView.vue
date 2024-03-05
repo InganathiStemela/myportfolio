@@ -1,6 +1,7 @@
 <template>
 
-    <h1>My Projects</h1>
+    <h1 style="text-align: center;">My Projects</h1>
+    <br>
       <div class="projects">
           <div v-for="Project in Projects" :key="Project.id" class="card" style="width: 27rem;">
               <img :src=" Project.imgUrl" class="card-img-top" :alt="Project.name">
@@ -38,7 +39,7 @@
   .card {
     width: 16rem;
     height: 16rem;
-    border: 1px solid #ccc;
+    border: 4px solid black;
     border-radius: 10px;
   }
   
