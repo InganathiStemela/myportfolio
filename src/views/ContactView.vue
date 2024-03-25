@@ -79,7 +79,7 @@
 }
 
 .black {
-  color: black;
+  color: rgb(219, 68, 68);
 }
 
 </style>
