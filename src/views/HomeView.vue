@@ -6,6 +6,7 @@
   <section>
     <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link">Download CV</a>
   </section>
+  <br>
 </template>
 <script>
 export default {
@@ -52,11 +53,12 @@ body {
 }
 .card-link {
   display: flex;
+  width: 100px;
   margin-left:18rem;
   margin-right:18rem;
   justify-content: center;
   padding: 0.75rem 1.5rem; 
-  background-color: rgb(178, 173, 173);
+  background-color: rgb(178, 173, 177);
   color: #ffffff;
   text-decoration: none;
   border-radius: 0.25rem;
@@ -66,7 +68,7 @@ body {
 }
 
 .card-link:hover {
-  background-color:  #F3DEBA;
+  background-color:  #f00aba;
 }
 </style>
 

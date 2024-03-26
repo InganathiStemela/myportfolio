@@ -1,4 +1,6 @@
 <template>
+  <h1 style="text-align: center;">My Testimonials</h1>
+    <br>
   <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
     <div class="row">
       <div class="card p-2" v-for="Testimonial in Testimonials" :key="Testimonial.id" style="width: 20rem;">
