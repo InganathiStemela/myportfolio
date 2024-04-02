@@ -4,7 +4,7 @@
     <h1 class="container display-1" id="body"></h1>
   </div>
   <section>
-    <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link">Download CV</a>
+    <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link" style="color: black;">Download CV</a>
   </section>
   <br>
 </template>
@@ -58,17 +58,17 @@ body {
   margin-right:18rem;
   justify-content: center;
   padding: 0.75rem 1.5rem; 
-  background-color: rgb(178, 173, 177);
-  color: #ffffff;
+  background-color: white;
+  /* color: #ffffff; */
   text-decoration: none;
   border-radius: 0.25rem;
   transition: background-color 0.3s ease;
-  box-shadow: 4px 8px 0px rgb(110, 109, 109) ; 
+  box-shadow: 4px 8px 0px black ; 
   margin-top: 5%;
 }
 
 .card-link:hover {
-  background-color:  #f00aba;
+  background-color:  fuchsia;
 }
 </style>
 

@@ -41,8 +41,7 @@
   </aside>
     </form>
   </div>
-
- 
+  <br>
 </template>
 
 <style scoped>
@@ -61,8 +60,8 @@
 
 .sub {
   margin: 0 0 0 35%;
-  background-color: black;
-  color: white;
+  background-color: fuchsia;
+  color: black;
 }
 
 .contact-info {
@@ -76,10 +75,6 @@
 
 .contact-info i {
   margin-right: 10px;
-}
-
-.black {
-  color: rgb(219, 68, 68);
 }
 
 </style>

@@ -1,7 +1,5 @@
 <template>
-
     <h1 style="text-align: center;">My Projects</h1>
-    <br>
       <div class="projects">
           <div v-for="Project in Projects" :key="Project.id" class="card" style="width: 27rem;">
               <img :src=" Project.imgUrl" class="card-img-top" :alt="Project.name">
@@ -60,13 +58,14 @@
   }
   
   .btn-primary {
-    color: #fff;
+    color: black;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
     margin: 7px;
     border-radius: 0.25rem;
+    background-color: fuchsia;
   }
   </style>
   

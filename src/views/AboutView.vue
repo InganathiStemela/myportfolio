@@ -3,6 +3,7 @@
     <br>
     <div class="container-fluid">
       <h1 class="title">Who am I?</h1>
+      <br>
   <div class="image">
     <img src="https://i.postimg.cc/445P40Yf/IMG-20240222-WA0019-1.jpg" width="180px" height="180px" alt="My Image">
   </div>
@@ -14,6 +15,7 @@
 <br>
   <div class="container-fluid">
     <h1 class="title">Hobbies</h1>
+    <br>
     <div class="image">
         <img src="https://i.postimg.cc/G2CdnSVZ/IMG-20220912-WA0021.jpg" width="200px" height="200px" alt="My Image">
       </div>
@@ -47,6 +49,7 @@ margin: 0 0 0 33%;
 }
 .about p {
   font-style: italic; 
+  justify-content: center;
 }
 
 

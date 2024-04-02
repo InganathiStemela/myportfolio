@@ -9,7 +9,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <router-link to="/" class="nav-link" exact>
               |Home|
@@ -22,7 +22,7 @@
           </li>
           <li class="nav-item">
             <router-link to="/resume" class="nav-link">
-              |Resume|
+              |Education|
             </router-link>
           </li>
           <li class="nav-item">
@@ -48,7 +48,7 @@
 </template>
 <script>
    export default {
-       name: 'Navbar',
+       name: 'navbar',
    }
 </script>
 <style  scoped>

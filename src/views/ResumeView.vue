@@ -1,7 +1,7 @@
 <template>
   <div class="container">
   <section class="education">
-    <h2 class="m-5">Education</h2>
+    
     <div class="timeline">
       <div v-for="Education in Educations" :key="Education.id" class="timeline-item">
         <div class="timeline-content">
@@ -16,7 +16,7 @@
 </div>
   <section class="skills">
     <h2>Skills</h2>
-    <div class="container">
+    <div class="container-fluid">
       <div v-for="Skill in skills" :key="Skill.id" class="card">
         <div class="card-body">
           <h1 class="card-text">{{ Skill.name }}</h1>
@@ -25,7 +25,6 @@
       </div>
     </div>
   </section>
-
 </template>
 
 <script>
@@ -54,10 +53,11 @@ export default {
 
 .timeline-content {
   width: 600px;
-  margin-left: 40px;
+  margin-left: 80px;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: white;
   border-radius: 5px;
+  border: 5px solid black;
 }
 
 .timeline-content h3 {
@@ -67,7 +67,7 @@ export default {
 }
 
 .timeline-content p {
-  color: #555;
+  color: black;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -82,25 +82,16 @@ export default {
   margin-bottom: 20px;
   font-weight: bold;
 }
-.experience h2 {
-  color: #333;
-  font-size: 30px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
 .skills {
   margin-bottom: 40px;
 }
-
 .skills h2 {
-  color: #333;
-  font-size: 30px;
-  margin-bottom: 20px;
+  color: black;
+  font-size: 50px;
+  margin-bottom: 50px;
   margin: 0 0 0 30%;
   font-weight: bold;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +99,7 @@ export default {
   gap: 20px;
   margin: 20px 0;
 }
-.container {
+.container-fluid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -116,29 +107,20 @@ export default {
   width: 80%;
 }
 .card {
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color:#f1f1f1;
-  border: 1px solid #ccc;
+  background-color:white;
+  border: 3px solid black;
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex: 0 0 calc(33.33% - 20px);
   
 }
-
-.card-img-top {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-
 </style>
 
 
