@@ -33,8 +33,8 @@ align-items: center;
 z-index: 3333;
 }
 .loader-spinner {
-border: 6px double #f40ebe; 
-border-top: 6px solid #380df6; 
+border: 6px double black; 
+border-top: 6px solid fuchsia; 
 border-radius: 50%;
 width: 80px;
 height: 80px;

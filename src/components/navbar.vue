@@ -2,7 +2,7 @@
   <div class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="background-color:fuchsia;">
-      <router-link to="/">
+      <router-link to="/" style="border: 1px solid black;">
         <img class="img-fluid" src="https://i.postimg.cc/xCy7kKmr/s.png" width="50px" height="50px" alt="logo">
       </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

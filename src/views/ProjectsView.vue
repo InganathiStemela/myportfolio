@@ -66,6 +66,12 @@
     margin: 7px;
     border-radius: 0.25rem;
     background-color: fuchsia;
+    transition: background-color 0.3s;
   }
+
+  .btn-primary:hover {
+    background-color: black; 
+    color: fuchsia;
+}
   </style>
   

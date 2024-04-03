@@ -1,7 +1,7 @@
 <template>
   <div class="container">
   <section class="education">
-    <h2>Education</h2>
+    <h2>Education/Work Experience</h2>
     <div class="timeline">
       <div v-for="Education in Educations" :key="Education.id" class="timeline-item">
         <div class="timeline-content">
@@ -13,6 +13,19 @@
       </div>
     </div>
     </section>
+</div>
+<div class="container">
+  <section class="workExperience">
+  <div class="timeline">
+    <div v-for="workExperience in workExperiences" :key="workExperience.id" class="timeline-item">
+      <div class="timeline-content">
+        <h3>{{ workExperience.position }}</h3>
+        <p>{{ workExperience.company }}</p>
+        <p>{{ workExperience.duration }}</p>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
   <section class="skills">
     <h2>Skills</h2>
@@ -60,10 +73,11 @@ export default {
   background-color: white;
   border-radius: 5px;
   border: 5px solid black;
+  transition: box-shadow 0.3s ease;
 }
 
 .timeline-content h3 {
-  color: #333;
+  color: black;
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -72,6 +86,10 @@ export default {
   color: black;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.timeline-item:hover {
+  box-shadow: 0 0 10px black; 
 }
 
 .education {
@@ -149,11 +167,6 @@ export default {
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
-
-.card:hover .card-body {
-  display: none; 
-}
-
 .card:hover::after {
   content: ""; 
   position: absolute;
