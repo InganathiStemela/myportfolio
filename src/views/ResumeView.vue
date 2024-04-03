@@ -1,7 +1,7 @@
 <template>
   <div class="container">
   <section class="education">
-    
+    <h2>Education</h2>
     <div class="timeline">
       <div v-for="Education in Educations" :key="Education.id" class="timeline-item">
         <div class="timeline-content">
@@ -16,9 +16,11 @@
 </div>
   <section class="skills">
     <h2>Skills</h2>
+    <br>
     <div class="container-fluid">
-      <div v-for="Skill in skills" :key="Skill.id" class="card">
+      <div v-for="Skill in skills" :key="Skill.id" class="card" :data-imgURL="Skill.imgURL" :style="{ '--imgURL': 'url(' + Skill.imgURL + ')' }">
         <div class="card-body">
+          <img :src="Skill.imgURL" alt="Skill Image" class="card-image">
           <h1 class="card-text">{{ Skill.name }}</h1>
           <h6 class="card-text">{{Skill.description}}</h6>
         </div>
@@ -77,8 +79,8 @@ export default {
 }
 
 .education h2 {
-  color: hsl(0, 0%, 20%);
-  font-size: 30px;
+  color: black;
+  font-size: 50px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -106,6 +108,22 @@ export default {
   gap: 5px;
   width: 80%;
 }
+/* .card {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color:white;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px black;
+  flex: 0 0 calc(33.33% - 20px);
+} */
+
+/* Default styling for cards */
 .card {
   color: black;
   display: flex;
@@ -117,10 +135,38 @@ export default {
   border: 3px solid black;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex: 0 0 calc(33.33% - 20px);
-  
+  box-shadow: 0 4px 8px black; 
+  transition: box-shadow 0.3s ease; 
 }
+
+.card-image {
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card:hover .card-body {
+  display: none; 
+}
+
+.card:hover::after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  background-image: var(--imgURL);
+}
+
 </style>
 
 

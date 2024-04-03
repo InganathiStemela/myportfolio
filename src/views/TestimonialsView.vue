@@ -33,10 +33,10 @@ body {
 }
 
 .card {
-
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   margin: 20px 30px;
+  margin-left: 80px;
   border: 5px solid black;
 }
 
