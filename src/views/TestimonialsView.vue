@@ -1,5 +1,5 @@
 <template>
-  <h1 style="text-align: center;">References</h1>
+  <h1 style="text-align: center;  font-family: 'Lobster', cursive;">My References</h1>
     <br>
   <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
     <div class="row">

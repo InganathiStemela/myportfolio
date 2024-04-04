@@ -1,5 +1,5 @@
 <template>
-    <h1 style="text-align: center;">My Projects</h1>
+    <h1 style="text-align: center;  font-family: 'Lobster', cursive;">My Projects</h1>
       <div class="projects">
           <div v-for="Project in Projects" :key="Project.id" class="card" style="width: 27rem;">
               <img :src=" Project.imgUrl" class="card-img-top" :alt="Project.name">

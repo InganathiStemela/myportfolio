@@ -14,19 +14,6 @@
     </div>
     </section>
 </div>
-<div class="container">
-  <section class="workExperience">
-  <div class="timeline">
-    <div v-for="workExperience in workExperiences" :key="workExperience.id" class="timeline-item">
-      <div class="timeline-content">
-        <h3>{{ workExperience.position }}</h3>
-        <p>{{ workExperience.company }}</p>
-        <p>{{ workExperience.duration }}</p>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
   <section class="skills">
     <h2>Skills</h2>
     <br>
@@ -101,6 +88,8 @@ export default {
   font-size: 50px;
   margin-bottom: 20px;
   font-weight: bold;
+  margin-left: 80px;
+  font-family: 'Lobster', cursive;
 }
 .skills {
   margin-bottom: 40px;
@@ -111,6 +100,7 @@ export default {
   margin-bottom: 50px;
   margin: 0 0 0 30%;
   font-weight: bold;
+  font-family: 'Lobster', cursive;
 }
 .container {
   display: flex;
@@ -126,22 +116,6 @@ export default {
   gap: 5px;
   width: 80%;
 }
-/* .card {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color:white;
-  border: 3px solid black;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 4px black;
-  flex: 0 0 calc(33.33% - 20px);
-} */
-
-/* Default styling for cards */
 .card {
   color: black;
   display: flex;
@@ -156,6 +130,7 @@ export default {
   flex: 0 0 calc(33.33% - 20px);
   box-shadow: 0 4px 8px black; 
   transition: box-shadow 0.3s ease; 
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .card-image {

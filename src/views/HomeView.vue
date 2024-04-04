@@ -112,7 +112,7 @@ export default {
     </div>
   </div>
   <section>
-    <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link" style="color: black;">Download CV</a>
+    <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link" style="color: black; font-family: 'Courier New', Courier, monospace;">Download CV</a>
   </section>
   <br>
 </template>
@@ -121,7 +121,7 @@ export default {
 export default {
   mounted() {
     const textElement = document.getElementById('body');
-    const originalText = "a fullstack web developer";
+    const originalText = "AN ASPIRING FULLSTACK WEB DEVELOPER";
     let currentIndex = 0;
 
     function typeText() {
@@ -139,6 +139,9 @@ export default {
 </script>
 
 <style scoped>
+.template {
+  overflow-y: hidden;
+}
 .home {
   display: flex;
   justify-content: space-between;
@@ -153,6 +156,7 @@ export default {
   padding: 20px;
   margin-bottom: 8%;
   margin-right: 10%;
+  font-family: 'Lobster', cursive;
 }
 #content {
   font-family: 'Lobster', cursive;
@@ -167,7 +171,7 @@ export default {
   justify-content: flex-end;
   align-items: center;
   margin-right: 10%;
-  margin-bottom: 2%;
+  margin-bottom: -1%;
 }
 .profile-image {
   width: 100%; 
@@ -182,10 +186,12 @@ export default {
   font-weight: bold;
 }
 .card-link {
+  font-weight: bold;
   display: flex;
   width: 100px;
   margin-left:10rem;
   margin-right:15rem;
+  margin-top: -93px;
   justify-content: center;
   padding: 0.75rem 1.5rem; 
   background-color: white;

@@ -32,7 +32,7 @@
           </li>
           <li class="nav-item">
             <router-link to="/testimonials" class="nav-link">
-              |Testimonials|
+              |References|
             </router-link>
           </li>
           <li class="nav-item">
