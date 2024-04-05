@@ -1,4 +1,5 @@
 <template>
+  <div class="body">
   <div class="container">
   <section class="education">
     <h2>Education/Work Experience</h2>
@@ -27,6 +28,7 @@
       </div>
     </div>
   </section>
+</div>
 </template>
 
 <script>
@@ -47,6 +49,9 @@ export default {
 </script>
 
 <style scoped>
+.body{
+  background-color: fuchsia;
+}
 .timeline-item {
   position: relative;
   padding-bottom: 30px;
@@ -95,6 +100,7 @@ export default {
 
 .education h3 {
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 .skills {
   margin-bottom: 40px;

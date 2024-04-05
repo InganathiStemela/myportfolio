@@ -1,4 +1,5 @@
 <template>
+  <div class="body">
   <h1 style="text-align: center;  font-family: 'Lobster', cursive;">My References</h1>
     <br>
   <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
@@ -12,6 +13,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -28,20 +30,23 @@ export default {
 </script>
 
 <style scoped>
-
+.body {
+  background-color: black;
+}
+h1{
+  color: white;
+}
 .card {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   margin: 20px 30px;
   margin-left: 80px;
-  border: 5px solid black;
+  border: 5px solid fuchsia;
   transition: transform 0.8s;
 }
 .card:hover {
   transform: translateY(-10px); 
 }
-
-
 .card-img-top {
   height: 50%; 
   width: 80%; 
@@ -51,9 +56,6 @@ export default {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
-
-
 .card-title {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;

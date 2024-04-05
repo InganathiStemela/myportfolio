@@ -1,4 +1,5 @@
 <template>
+  <div class="body">
   <div class="container">
     <div class="box animated-border">
       <div class="section">
@@ -26,10 +27,14 @@
       </div>
     </div>
   </div>
+</div>
 <br>
 </template>
 
 <style scoped>
+.body{
+  background-color: black;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -52,7 +57,7 @@
   border: 5px solid fuchsia;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .section {

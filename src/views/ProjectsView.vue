@@ -39,6 +39,7 @@
     height: 16rem;
     border: 4px solid black;
     border-radius: 10px;
+    background-color: black;
   }
   
   .card-img-top {
@@ -56,6 +57,7 @@
   .card-title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
   }
   
@@ -75,6 +77,7 @@
   .btn-primary:hover {
     background-color: black; 
     color: fuchsia;
+    border: 2px solid fuchsia;
 }
   </style>
   
