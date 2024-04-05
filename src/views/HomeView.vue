@@ -97,8 +97,18 @@ export default {
   transition: background-color 0.3s ease;
   box-shadow: 4px 8px 0px black ; 
 }
-
 .card-link:hover {
   background-color:  fuchsia;
+}
+@media (max-width: 767px) {
+  .home {
+    font-size: 1.5em;
+  }
+  .content {
+    width: 90%;
+  }
+  .image-container {
+    width: 90%;
+  }
 }
 </style>

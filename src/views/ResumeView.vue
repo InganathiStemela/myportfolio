@@ -165,6 +165,17 @@ export default {
   border-radius: 10px;
   background-image: var(--imgURL);
 }
+@media (max-width: 767px) {
+  .home {
+    font-size: 1.5em;
+  }
+  .content {
+    width: 90%;
+  }
+  .image-container {
+    width: 90%;
+  }
+}
 
 </style>
 

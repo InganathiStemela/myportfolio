@@ -81,4 +81,15 @@ h1{
     padding: 0;
   }
 }
+@media (max-width: 767px) {
+  .home {
+    font-size: 1.5em;
+  }
+  .content {
+    width: 90%;
+  }
+  .image-container {
+    width: 90%;
+  }
+}
 </style>
