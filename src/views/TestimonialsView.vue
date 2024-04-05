@@ -28,9 +28,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  background-color: black;
-}
 
 .card {
   grid-template-columns: repeat(3, 1fr);
@@ -38,7 +35,12 @@ body {
   margin: 20px 30px;
   margin-left: 80px;
   border: 5px solid black;
+  transition: transform 0.8s;
 }
+.card:hover {
+  transform: translateY(-10px); 
+}
+
 
 .card-img-top {
   height: 50%; 
@@ -55,6 +57,11 @@ body {
 .card-title {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+.card-text {
+  font-style: italic;
 }
 
 @media (max-width: 500px) {

@@ -52,6 +52,7 @@
   border: 5px solid fuchsia;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
 .section {

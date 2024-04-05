@@ -61,6 +61,9 @@
 </template>
 
 <style>
+.container{
+  margin-top: -90px;
+}
 li,ul{
   list-style:none;
   padding:0;
@@ -203,7 +206,8 @@ li,ul{
   position:relative;
   line-height:24px;
   cursor:pointer;
-  color:black
+  color:black;
+  font-family: 'Courier New', Courier, monospace;
 }
 .contact-form .theme-btn:hover{
   color:fuchsia;;

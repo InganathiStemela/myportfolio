@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "myportfolio-a2203",
-    "vueport": "myportfolio-a2203"
+    "vueport": "myportfolio-a2203",
+    "myportfolio": "myportfolio-a2203"
   },
   "targets": {},
   "etags": {}

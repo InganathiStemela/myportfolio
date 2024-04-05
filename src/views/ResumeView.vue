@@ -73,6 +73,7 @@ export default {
   color: black;
   font-size: 16px;
   margin-bottom: 10px;
+  font-style: italic;
 }
 
 .timeline-item:hover {
@@ -90,6 +91,10 @@ export default {
   font-weight: bold;
   margin-left: 80px;
   font-family: 'Lobster', cursive;
+}
+
+.education h3 {
+  font-family: 'Courier New', Courier, monospace;
 }
 .skills {
   margin-bottom: 40px;

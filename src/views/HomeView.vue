@@ -1,107 +1,4 @@
-<!-- <template>
-  <div class="container">
-  <div class="home display-2">
-    <p> I am Inganathi Stemela,</p>
-    </div>
-    <div class="content">
-    <h1 class="container display-1" id="body"></h1>
-  <div class="image-container">
-      <img src="https://i.postimg.cc/445P40Yf/IMG-20240222-WA0019-1.jpg" class="profile-image" alt="Profile Image">
-    </div>
-  </div>
-  </div>
-  <section>
-    <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link" style="color: black;">Download CV</a>
-  </section>
-  <br>
-</template>
-<script>
-export default {
-  mounted() {
-    const textElement = document.getElementById('body');
-    const originalText = "An aspiring web developer";
-    let currentIndex = 0;
-
-    function typeText() {
-      if (currentIndex < originalText.length) {
-        textElement.textContent += originalText.charAt(currentIndex);
-        currentIndex++;
-      } else {
-        clearInterval(typingInterval);
-      }
-    }
-
-    const typingInterval = setInterval(typeText, 100);
-  },
-};
-</script>
-
-<style scoped>
-.container {
-  display: flex;
-  align-items: flex-start; 
-  margin-top: 50px;
-}
-
-.home {
-  margin-right: 20px; 
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-}
-
-.image-container {
-  width: 50%;
-  height: 80vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  
-}
-.profile-image {
-  width: auto;
-  height: 100%; 
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid fuchsia;
-  
-}
-
-.container {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.card-text {
-  font-size: 16px;
-  font-weight: bold;
-}
-.card-link {
-  display: flex;
-  width: 100px;
-  margin-left:18rem;
-  margin-right:18rem;
-  justify-content: center;
-  padding: 0.75rem 1.5rem; 
-  background-color: white;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  transition: background-color 0.3s ease;
-  box-shadow: 4px 8px 0px black ; 
-  margin-top: 5%;
-}
-
-.card-link:hover {
-  background-color:  fuchsia;
-}
-</style>
-
-
-  -->
-
- <template>
+<template>
   <div class="home display-2">
     <div class="content">
       <p class="display-2">I am Inganathi Stemela,</p>
@@ -112,7 +9,7 @@ export default {
     </div>
   </div>
   <section>
-    <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link" style="color: black; font-family: 'Courier New', Courier, monospace;">Download CV</a>
+    <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link" style="color: black; font-family: 'Lobster', cursive;">Download CV</a>
   </section>
   <br>
 </template>

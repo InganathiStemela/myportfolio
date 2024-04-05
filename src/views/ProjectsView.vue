@@ -46,6 +46,7 @@
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border: 1px solid black;
   }
   
   .card-body {
@@ -55,6 +56,7 @@
   .card-title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .btn-primary {
@@ -67,6 +69,7 @@
     border-radius: 0.25rem;
     background-color: fuchsia;
     transition: background-color 0.3s;
+    font-style: italic;
   }
 
   .btn-primary:hover {
