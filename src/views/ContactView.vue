@@ -1,9 +1,9 @@
 <template>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-u7n9b/uDZ8aQX6Gp7jpFVogqddmFU2e9cIBWhkVoCsfH6t/kY9e0Ixmhp4i6AzN" crossorigin="anonymous">
+
  <section class="contact-page-section">
   <div class="container">
       <div class="sec-title">
-          <div class="title">Contact Us</div>
+          <div class="title">Contact Me</div>
             <h2>Let's Get in Touch.</h2>
         </div>
         <div class="inner-container">
@@ -41,15 +41,15 @@
                   <div class="inner-column">
                       <h2>Contact Info</h2>
                         <ul class="list-info">
-                          <li><i class="fas fa-globe"></i>31566 Cosmos Str, Dunoon, Milnerton, Cape Town, Western Cape, 7441</li>
-                            <li><i class="far fa-envelope"></i>inganathistemela13@gmail.com</li>
+                          <li><i class="fa fa-map-marker" aria-hidden="true"></i>31566 Cosmos Str, Dunoon, Milnerton, Cape Town, Western Cape, 7441</li>
+                            <li><i class="fa-solid fa-envelope"></i>inganathistemela13@gmail.com</li>
                             <li><i class="fas fa-phone"></i>27-810-891-443 <br> 27-671-877-320</li>
                         </ul>
                         <ul class="social-icon-four">
                             <li class="follow">Follow on: </li>
-                            <li><a href="https://www.facebook.com/inganathi.stemela/"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/inganathi-stemela-5624362b6/"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/InganathiStemela"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.facebook.com/inganathi.stemela/"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/inganathi-stemela-5624362b6/"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/InganathiStemela"><i class="fab fa-github"></i></a></li>
                           </ul>
                     </div>
                 </div>

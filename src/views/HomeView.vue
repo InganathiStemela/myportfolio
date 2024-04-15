@@ -1,4 +1,5 @@
 <template>
+  <div class="body">
   <div class="home display-2">
     <div class="content">
       <p class="display-2">I am Inganathi Stemela,</p>
@@ -11,6 +12,7 @@
   <section>
     <a href="https://drive.google.com/file/d/1iEUwcB4YQJgR2gqh39FnlULG2TkssgXr/view?usp=sharing" class="card-link" style="color: black; font-family: 'Lobster', cursive;">Download CV</a>
   </section>
+  </div>
   <br>
 </template>
 
@@ -36,6 +38,13 @@ export default {
 </script>
 
 <style scoped>
+.body{
+  background-image: url(https://i.postimg.cc/D0t9GJ8B/white-design-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 .template {
   overflow-y: hidden;
 }
