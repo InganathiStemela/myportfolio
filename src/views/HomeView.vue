@@ -33,6 +33,11 @@ export default {
     }
 
     const typingInterval = setInterval(typeText, 100);
+
+    setTimeout(() => {
+      const button = document.querySelector('.card-link');
+      button.classList.add('show');
+    }, 2000);
   },
 };
 </script>
@@ -63,6 +68,16 @@ export default {
   margin-bottom: 8%;
   margin-right: 10%;
   font-family: 'Lobster', cursive;
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: black; 
+  }
+  100% {
+    color: fuchsia;
+  }
 }
 #content {
   font-family: 'Lobster', cursive;
@@ -85,6 +100,16 @@ export default {
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid fuchsia; 
+  animation: spin 3s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg); 
+  }
 }
 
 .card-text {
@@ -94,8 +119,8 @@ export default {
 .card-link {
   font-weight: bold;
   display: flex;
-  width: 100px;
-  margin-left:10rem;
+  width: 150px;
+  margin-left:12rem;
   margin-right:15rem;
   margin-top: -93px;
   justify-content: center;
@@ -103,11 +128,15 @@ export default {
   background-color: white;
   text-decoration: none;
   border-radius: 0.25rem;
-  transition: background-color 0.3s ease;
+  transition: transform 0.5s ease-out;
+  transform: translateX(-100%);
   box-shadow: 4px 8px 0px black ; 
 }
 .card-link:hover {
   background-color:  fuchsia;
+}
+.card-link.show {
+  transform: translateX(0);
 }
 @media (max-width: 767px) {
   .home {
