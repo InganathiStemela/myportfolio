@@ -141,12 +141,24 @@ export default {
 @media (max-width: 767px) {
   .home {
     font-size: 1.5em;
+    position: relative;
+  
+    bottom:15%;
   }
   .content {
     width: 90%;
   }
-  .image-container {
-    width: 90%;
+  .image-container img {
+    position: relative;
+    width:750%;
+height: 50%;
+    margin:65%;
+    top:50%;
+
+  }
+  .card-link{
+  margin-top: 20%;
+
   }
 }
 </style>

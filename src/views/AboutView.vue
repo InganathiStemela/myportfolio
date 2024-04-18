@@ -32,13 +32,16 @@
 </template>
 
 <style scoped>
-.body{
+.body {
   background-color: black;
 }
+
 .container {
   display: flex;
   justify-content: center;
+  padding: 0 20px; 
 }
+
 .animated-border {
   animation: border-animation 5s infinite alternate;
 }
@@ -51,13 +54,15 @@
     border-width: 10px;
   }
 }
+
 .box {
-  width: 1000px;
+  max-width: 100%; 
+  width: 100%;
   background-color: white;
   border: 5px solid fuchsia;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 100px;
+  margin-top: 50px; 
 }
 
 .section {
@@ -70,36 +75,31 @@
 }
 
 .content {
-  display: flex;
+  flex-direction: column; 
 }
+
 .text {
-  text-align: center;
-  margin-top: 5%;
+  text-align: justify; 
   font-style: italic;
 }
 
 .image {
-  flex: 1;
   text-align: center;
 }
 
-#about-me {
-  flex: 2;
-  padding-left: 20px;
-}
-#hobbies {
-  flex: 2;
-  padding-right: 20px;
-}
-@media (max-width: 767px) {
-  .home {
-    font-size: 1.5em;
-  }
+@media (min-width: 768px) {
   .content {
-    width: 90%;
+    flex-direction: row; 
   }
-  .image-container {
-    width: 90%;
+
+  .text {
+    flex: 2;
+    padding-right: 20px;
+  }
+
+  .image {
+    flex: 1;
+    text-align: center;
   }
 }
 </style>

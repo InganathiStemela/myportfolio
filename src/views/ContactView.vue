@@ -41,7 +41,7 @@
                   <div class="inner-column">
                       <h2>Contact Info</h2>
                         <ul class="list-info">
-                          <li><i class="fa fa-map-marker" aria-hidden="true"></i>31566 Cosmos Str, Dunoon, Milnerton, Cape Town, Western Cape, 7441</li>
+                          <li><i class="fa-solid fa-location-dot"></i>31566 Cosmos Str, Dunoon, Milnerton, Cape Town, Western Cape, 7441</li>
                             <li><i class="fa-solid fa-envelope"></i>inganathistemela13@gmail.com</li>
                             <li><i class="fas fa-phone"></i>27-810-891-443 <br> 27-671-877-320</li>
                         </ul>
@@ -255,14 +255,21 @@ li,ul{
   color:black
 }
 @media (max-width: 767px) {
-  .home {
-    font-size: 1.5em;
+  .container {
+    width: 70%;
+    margin-left: -1%;
   }
-  .content {
-    width: 90%;
+  .sec-title{
+    margin-bottom: 100%;
+    margin-left: -3%;
   }
-  .image-container {
-    width: 90%;
+  .form-column{
+    width: 97%;
+  }
+  .inner-container{
+    margin-top: 80%;
+    margin-left: -55%;
+    width: 150%;
   }
 }
 </style>

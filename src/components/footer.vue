@@ -1,14 +1,16 @@
 <template>
-<div class="container-fluid">
+  <div class="footer-container">
+<div class="container-fluid d-flex justify-content-center align-items-center">
       <div class="row">
         <div class="col-12 text-center">
           <p class="lead">
-            INGANATHI STEMELA's PORTFOLIO ©
+            designed by I.Stemela ©
             <span>{{ currYear }}</span>
           </p>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -23,14 +25,29 @@ export default{
 </script>
 
 <style scoped>
-.container-fluid {
-    position: fixed;
+.footer-container {
+  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 30px;
+}
+
+.container-fluid {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 0;
+  padding: 10px 0;
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    position: static;
   }
+  
+  .container-fluid {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
 </style>

@@ -49,9 +49,24 @@ export default {
 </script>
 
 <style scoped>
-.body{
+.body {
   background-color: fuchsia;
+  padding: 20px;
 }
+
+.education, .skills {
+  margin-bottom: 40px;
+}
+
+.education h2, .skills h2 {
+  color: black;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
 .timeline-item {
   position: relative;
   padding-bottom: 30px;
@@ -59,8 +74,7 @@ export default {
 }
 
 .timeline-content {
-  width: 600px;
-  margin-left: 80px;
+  width: 100%;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
@@ -85,48 +99,13 @@ export default {
   box-shadow: 0 0 10px black; 
 }
 
-.education {
-  margin-bottom: 40px;
-}
-
-.education h2 {
-  color: black;
-  font-size: 50px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  margin-left: 80px;
-  font-family: 'Lobster', cursive;
-}
-
-.education h3 {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-}
-.skills {
-  margin-bottom: 40px;
-}
-.skills h2 {
-  color: black;
-  font-size: 50px;
-  margin-bottom: 50px;
-  margin: 0 0 0 30%;
-  font-weight: bold;
-  font-family: 'Lobster', cursive;
-}
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin: 20px 0;
 }
-.container-fluid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-  width: 80%;
-}
+
 .card {
   color: black;
   display: flex;
@@ -138,7 +117,7 @@ export default {
   border: 3px solid black;
   border-radius: 5px;
   padding: 20px;
-  flex: 0 0 calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
   box-shadow: 0 4px 8px black; 
   transition: box-shadow 0.3s ease; 
   font-family: 'Courier New', Courier, monospace;
@@ -166,17 +145,22 @@ export default {
   background-image: var(--imgURL);
 }
 @media (max-width: 767px) {
-  .home {
-    font-size: 1.5em;
+  .education h2, .skills h2 {
+    font-size: 24px;
   }
-  .content {
-    width: 90%;
+  .timeline-content {
+    padding: 15px;
   }
-  .image-container {
-    width: 90%;
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 20px;
   }
 }
-
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 calc(100% - 20px);
+  }
+}
 </style>
 
 

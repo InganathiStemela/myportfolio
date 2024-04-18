@@ -32,29 +32,38 @@ export default {
 <style scoped>
 .body {
   background-color: black;
+  padding: 20px;
 }
-h1{
+h1 {
   color: white;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: -10px; /* Adjust the right margin */
 }
 .card {
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  margin: 20px 30px;
-  margin-left: 80px;
+  width: calc(33.33% - 20px);
+  margin: 10px;
   border: 5px solid fuchsia;
+  border-radius: 10px;
   transition: transform 0.8s;
 }
 .card:hover {
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
 }
 .card-img-top {
-  height: 50%; 
-  width: 80%; 
-  margin: 0 0 0 8%;
-  border: 2px solid black;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+.card-body {
+  padding: 1rem;
 }
 .card-title {
   font-size: 1.2rem;
@@ -66,30 +75,15 @@ h1{
   font-style: italic;
 }
 
-@media (max-width: 500px) {
-  .row {
-    margin-left: 0;
-    padding: 0;
-  }
-
+@media (max-width: 991px) {
   .card {
-    margin: 0;
-    padding: 0;
-  }
-
-  .container {
-    padding: 0;
+    width: calc(50% - 20px);
   }
 }
+
 @media (max-width: 767px) {
-  .home {
-    font-size: 1.5em;
-  }
-  .content {
-    width: 90%;
-  }
-  .image-container {
-    width: 90%;
+  .card {
+    width: calc(100% - 20px);
   }
 }
 </style>

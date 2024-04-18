@@ -52,7 +52,16 @@
    }
 </script>
 <style  scoped>
+/* .sticky-top {
+  position: fixed !important; 
+  top: 0;
+  width: 100%; 
+  z-index: 1000; 
+} */
 @media only screen and (max-width: 600px) {
+  .sticky-top {
+    position: static !important; 
+  }
 }
 
 

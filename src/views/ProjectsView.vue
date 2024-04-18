@@ -79,14 +79,15 @@
     color: fuchsia;
     border: 2px solid fuchsia;
 }
-@media (max-width: 767px) {
-  .home {
-    font-size: 1.5em;
-  }
+
   .content {
     width: 90%;
   }
   .image-container {
+    width: 90%;
+  }
+  @media (max-width: 767px) {
+  .card {
     width: 90%;
   }
 }
